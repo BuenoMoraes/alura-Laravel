@@ -4,8 +4,9 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 
-class SeriesController extends Controller{
-    public function index(Request $request) {
+class SeriesController extends Controller
+{
+    public function index() {
          $series = [
             'Grey\'s Anatomy',
             'Lost',
@@ -14,4 +15,9 @@ class SeriesController extends Controller{
     /*Retornar a view e compact para passar uma variavel do controller para a view no caso o array series */
         return view('series.index', compact('series'));
     }
+
+    public function create() {
+        return view('series.create');
+    }
+
 }
