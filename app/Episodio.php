@@ -8,7 +8,6 @@ class Episodio extends Model
 {
     protected $fillable = ['numero'];
     public $timestamps = false;
-    
 
     public function temporada()
     {

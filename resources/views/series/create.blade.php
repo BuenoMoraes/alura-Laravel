@@ -19,7 +19,7 @@
     @csrf
     <div class="row">
         <div class="col col-8">
-            <label for="nome" class="">Nome</label>
+            <label for="nome">Nome</label>
             <input type="text" class="form-control" name="nome" id="nome">
         </div>
 
