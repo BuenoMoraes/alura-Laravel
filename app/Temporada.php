@@ -6,6 +6,8 @@ use Illuminate\Database\Eloquent\Model;
 
 class Temporada extends Model
 {
+    protected $fillable = ['numero'];
+    public $timestamps = false;
     /*Definir que uma temporada tem varios episódios*/ 
     public function episodios()
     {
