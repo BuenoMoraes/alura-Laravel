@@ -16,7 +16,7 @@ class RemovedorDeSerie
             $this->removerTemporadas($serie);
             $serie->delete();
         });
- 
+
         return $nomeSerie;
     }
 
